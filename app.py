@@ -2,7 +2,8 @@ import streamlit as st
 import requests
 
 # Hugging Face API 토큰
-HF_TOKEN = "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"
+HF_TOKEN = "YOUR_HUGGINGFACE_TOKEN"  # 여기에 Hugging Face API 토큰을 입력하세요.
+
 model_url = "https://api-inference.huggingface.co/models/HuggingFaceH4/zephyr-7b-beta"
 
 # 초기 세션 상태 설정
