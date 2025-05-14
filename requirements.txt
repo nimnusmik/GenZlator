@@ -1,0 +1,4 @@
+# 필요한 패키지들
+streamlit
+openai
+python-dotenv
