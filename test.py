@@ -2,7 +2,11 @@ import streamlit as st
 import requests
 
 # Hugging Face API 토큰
-HF_TOKEN = "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"
+HF_TOKEN = "나중에 설정할 것"
+# .env 파일에서 API 키 로드
+# load_dotenv()
+# HF_TOKEN = os.getenv("HF_TOKEN")
+
 
 # 초기 세션 상태 설정
 if "history" not in st.session_state:
