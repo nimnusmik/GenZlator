@@ -1,4 +1,4 @@
-.env
-.streamlit/secrets.toml
-urban_dict.py
-app.py
+__pycache__
+.DS_Store
+.streamlit/
+*.xlsx # GENZSLANGS.xlsx 제외
