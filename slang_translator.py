@@ -171,11 +171,14 @@ def suggest_slang(text):
     return suggestions
 
 # Streamlit app
-st.title("🇰🇷 ➡️ 🇺🇸 Gen Z Slang Translator")
-st.write("한국어를 입력하면 20대 스타일의 영어로 번역해드려요! 💜")
+st.title("🌟 Turn your Korean into natural, native English 📣")
+st.write("Tired of awkward translations? We turn your Korean into real-life English people actually use.")
+#st.sidebar.image("https://example.com/logo.png", use_column_width=True)  # Replace with your logo URL
+st.sidebar.write("Made with ❤️ by Sunmin Kim")
+
 
 # Input text
-korean_input = st.text_area("한국어 문장을 입력하세요:", height=100, value="안녕, 나는 한국인이야")
+korean_input = st.text_area("한국어 문장을 입력하세요:", height=100, value=" 안녕하세요! 이 앱은 한국어를 자연스러운 영어로 번역해 줘요.")
 
 # Slang intensity slider
 slang_intensity = st.slider("Gen Z 슬랭 강도 조절", min_value=0, max_value=10, value=5, step=1)
@@ -192,10 +195,10 @@ if st.button("번역하기"):
             genz_translated = rewrite_to_genz_style(translated_text, slang_intensity)
             
             # Display results
-            st.subheader("기본 번역 (DeepL):")
+            st.subheader("기본 번역:")
             st.write(translated_text)
             
-            st.subheader("20대 스타일 번역:")
+            st.subheader("슬랭어 번역:")
             st.write(genz_translated)
             
             # Suggest additional slang
@@ -212,4 +215,3 @@ if st.button("번역하기"):
 
 # Add a fun footer
 st.markdown("---")
-st.markdown("Made with 💖 for K-pop and Gen Z vibes! ✨")
