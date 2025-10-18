@@ -1,3 +1,2 @@
 streamlit==1.36.0
-deepl==1.18.0
-openai==1.35.7
+requests>=2.31.0

@@ -1,6 +1,9 @@
-<<<<<<< HEAD
+
 __pycache__
 .DS_Store
 .streamlit/
 *.xlsx # GENZSLANGS.xlsx 제외
 .secrets.toml
+
+venv/*
+venv/
